@@ -9,7 +9,7 @@ const { bot } = require("./bot.json");
 //Client configuration
 const client = new Discord.Client();
 const prefix = "^";
-const token = "ODI5MzkwMDU2Mzc5OTA4MTM4.YG3brg.OIlDbDKBPcZBNsVt0k31IKoxcxI";
+const token = "";
 
 //Client Message Variables
 client.commands = new Discord.Collection();
@@ -68,4 +68,4 @@ client.on('message', message => {
 });
 
 
-client.login(token);
+client.login(process.env.TOKEN);
